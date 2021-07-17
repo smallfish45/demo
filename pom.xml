@@ -8,6 +8,8 @@
         <module>register-8761-service</module>
         <module>register-8762-service</module>
         <module>config-service</module>
+        <module>order-service</module>
+        <module>user-service</module>
     </modules>
 
     <parent>

@@ -1,0 +1,189 @@
+11:02:18.673 [main] INFO  c.e.d.UserMapperTest - [logStartupProfileInfo,651] - No active profile set, falling back to default profiles: default
+11:02:22.474 [main] INFO  c.n.c.s.URLConfigurationSource - [<init>,122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+11:02:22.495 [main] INFO  c.n.c.s.URLConfigurationSource - [<init>,122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+11:02:25.378 [main] INFO  c.a.d.p.DruidDataSource - [init,985] - {dataSource-1} inited
+11:02:28.459 [main] INFO  c.a.d.p.DruidDataSource - [init,985] - {dataSource-2} inited
+11:02:29.851 [main] INFO  c.a.d.p.DruidDataSource - [close,2032] - {dataSource-1} closing ...
+11:02:29.859 [main] INFO  c.a.d.p.DruidDataSource - [close,2104] - {dataSource-1} closed
+11:02:29.861 [main] INFO  c.a.d.p.DruidDataSource - [close,2032] - {dataSource-2} closing ...
+11:02:29.865 [main] INFO  c.a.d.p.DruidDataSource - [close,2104] - {dataSource-2} closed
+11:04:23.130 [main] INFO  c.e.d.UserMapperTest - [logStartupProfileInfo,651] - No active profile set, falling back to default profiles: default
+11:04:26.758 [main] INFO  c.n.c.s.URLConfigurationSource - [<init>,122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+11:04:26.771 [main] INFO  c.n.c.s.URLConfigurationSource - [<init>,122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+11:04:29.718 [main] INFO  c.a.d.p.DruidDataSource - [init,985] - {dataSource-1} inited
+11:04:32.041 [main] INFO  c.a.d.p.DruidDataSource - [init,985] - {dataSource-2} inited
+11:04:37.357 [main] INFO  c.e.d.UserMapperTest - [logStarted,61] - Started UserMapperTest in 18.953 seconds (JVM running for 22.733)
+11:04:37.907 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2032] - {dataSource-1} closing ...
+11:04:37.922 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2104] - {dataSource-1} closed
+11:04:37.924 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2032] - {dataSource-2} closing ...
+11:04:37.928 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2104] - {dataSource-2} closed
+11:10:05.998 [main] INFO  c.e.d.UserMapperTest - [logStartupProfileInfo,655] - The following profiles are active: db-config
+11:10:09.395 [main] INFO  c.n.c.s.URLConfigurationSource - [<init>,122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+11:10:09.411 [main] INFO  c.n.c.s.URLConfigurationSource - [<init>,122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+11:10:12.008 [main] INFO  c.a.d.p.DruidDataSource - [init,985] - {dataSource-1} inited
+11:10:14.302 [main] INFO  c.a.d.p.DruidDataSource - [init,985] - {dataSource-2} inited
+11:10:19.519 [main] INFO  c.e.d.UserMapperTest - [logStarted,61] - Started UserMapperTest in 17.867 seconds (JVM running for 21.455)
+11:10:20.000 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2032] - {dataSource-1} closing ...
+11:10:20.007 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2104] - {dataSource-1} closed
+11:10:20.008 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2032] - {dataSource-2} closing ...
+11:10:20.011 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2104] - {dataSource-2} closed
+11:13:07.423 [main] INFO  c.e.d.UserMapperTest - [logStartupProfileInfo,655] - The following profiles are active: db-config
+11:13:11.462 [main] INFO  c.n.c.s.URLConfigurationSource - [<init>,122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+11:13:11.478 [main] INFO  c.n.c.s.URLConfigurationSource - [<init>,122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+11:13:14.214 [main] INFO  c.a.d.p.DruidDataSource - [init,985] - {dataSource-1} inited
+11:13:16.552 [main] INFO  c.a.d.p.DruidDataSource - [init,985] - {dataSource-2} inited
+11:13:21.855 [main] INFO  c.e.d.UserMapperTest - [logStarted,61] - Started UserMapperTest in 19.826 seconds (JVM running for 23.862)
+11:13:22.367 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2032] - {dataSource-1} closing ...
+11:13:22.375 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2104] - {dataSource-1} closed
+11:13:22.377 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2032] - {dataSource-2} closing ...
+11:13:22.379 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2104] - {dataSource-2} closed
+11:14:50.140 [main] INFO  c.e.d.UserMapperTest - [logStartupProfileInfo,655] - The following profiles are active: db-config
+11:14:53.403 [main] INFO  c.n.c.s.URLConfigurationSource - [<init>,122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+11:14:53.419 [main] INFO  c.n.c.s.URLConfigurationSource - [<init>,122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+11:14:55.964 [main] INFO  c.a.d.p.DruidDataSource - [init,985] - {dataSource-1} inited
+11:14:58.413 [main] INFO  c.a.d.p.DruidDataSource - [init,985] - {dataSource-2} inited
+11:15:04.071 [main] INFO  c.e.d.UserMapperTest - [logStarted,61] - Started UserMapperTest in 17.91 seconds (JVM running for 20.955)
+11:15:04.796 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2032] - {dataSource-1} closing ...
+11:15:04.825 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2104] - {dataSource-1} closed
+11:15:04.825 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2032] - {dataSource-2} closing ...
+11:15:04.830 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2104] - {dataSource-2} closed
+11:24:00.043 [main] INFO  c.e.d.UserMapperTest - [logStartupProfileInfo,655] - The following profiles are active: db-config
+11:24:03.500 [main] INFO  c.n.c.s.URLConfigurationSource - [<init>,122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+11:24:03.517 [main] INFO  c.n.c.s.URLConfigurationSource - [<init>,122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+11:24:06.093 [main] INFO  c.a.d.p.DruidDataSource - [init,985] - {dataSource-1} inited
+11:24:08.357 [main] INFO  c.a.d.p.DruidDataSource - [init,985] - {dataSource-2} inited
+11:24:13.933 [main] INFO  c.e.d.UserMapperTest - [logStarted,61] - Started UserMapperTest in 18.064 seconds (JVM running for 22.354)
+11:24:14.556 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2032] - {dataSource-1} closing ...
+11:24:14.577 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2104] - {dataSource-1} closed
+11:24:14.588 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2032] - {dataSource-2} closing ...
+11:24:14.619 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2104] - {dataSource-2} closed
+11:26:51.917 [main] INFO  c.e.d.UserMapperTest - [logStartupProfileInfo,655] - The following profiles are active: db-config
+11:26:55.432 [main] INFO  c.n.c.s.URLConfigurationSource - [<init>,122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+11:26:55.449 [main] INFO  c.n.c.s.URLConfigurationSource - [<init>,122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+11:26:58.201 [main] INFO  c.a.d.p.DruidDataSource - [init,985] - {dataSource-1} inited
+11:27:00.468 [main] INFO  c.a.d.p.DruidDataSource - [init,985] - {dataSource-2} inited
+11:27:05.713 [main] INFO  c.e.d.UserMapperTest - [logStarted,61] - Started UserMapperTest in 17.81 seconds (JVM running for 21.245)
+11:27:06.366 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2032] - {dataSource-1} closing ...
+11:27:06.442 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2104] - {dataSource-1} closed
+11:27:06.442 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2032] - {dataSource-2} closing ...
+11:27:06.445 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2104] - {dataSource-2} closed
+11:28:52.843 [main] INFO  c.e.d.UserMapperTest - [logStartupProfileInfo,655] - The following profiles are active: db-config
+11:28:56.839 [main] INFO  c.n.c.s.URLConfigurationSource - [<init>,122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+11:28:56.854 [main] INFO  c.n.c.s.URLConfigurationSource - [<init>,122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+11:29:01.616 [main] INFO  c.a.d.p.DruidDataSource - [init,985] - {dataSource-1} inited
+11:29:04.467 [main] INFO  c.a.d.p.DruidDataSource - [init,985] - {dataSource-2} inited
+11:29:10.632 [main] INFO  c.e.d.UserMapperTest - [logStarted,61] - Started UserMapperTest in 21.705 seconds (JVM running for 27.367)
+11:30:09.248 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2032] - {dataSource-1} closing ...
+11:30:09.269 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2104] - {dataSource-1} closed
+11:30:09.269 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2032] - {dataSource-2} closing ...
+11:30:09.272 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2104] - {dataSource-2} closed
+11:34:21.487 [main] INFO  c.e.d.UserMapperTest - [logStartupProfileInfo,655] - The following profiles are active: db-config
+11:34:24.903 [main] INFO  c.n.c.s.URLConfigurationSource - [<init>,122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+11:34:24.925 [main] INFO  c.n.c.s.URLConfigurationSource - [<init>,122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+11:34:27.541 [main] INFO  c.a.d.p.DruidDataSource - [init,985] - {dataSource-1} inited
+11:34:29.894 [main] INFO  c.a.d.p.DruidDataSource - [init,985] - {dataSource-2} inited
+11:34:35.028 [main] INFO  c.e.d.UserMapperTest - [logStarted,61] - Started UserMapperTest in 17.57 seconds (JVM running for 21.073)
+11:34:35.816 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2032] - {dataSource-1} closing ...
+11:34:35.832 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2104] - {dataSource-1} closed
+11:34:35.834 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2032] - {dataSource-2} closing ...
+11:34:35.838 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2104] - {dataSource-2} closed
+11:35:47.300 [main] INFO  c.e.d.UserMapperTest - [logStartupProfileInfo,655] - The following profiles are active: db-config
+11:35:50.630 [main] INFO  c.n.c.s.URLConfigurationSource - [<init>,122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+11:35:50.647 [main] INFO  c.n.c.s.URLConfigurationSource - [<init>,122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+11:35:53.221 [main] INFO  c.a.d.p.DruidDataSource - [init,985] - {dataSource-1} inited
+11:35:55.481 [main] INFO  c.a.d.p.DruidDataSource - [init,985] - {dataSource-2} inited
+11:36:00.817 [main] INFO  c.e.d.UserMapperTest - [logStarted,61] - Started UserMapperTest in 17.549 seconds (JVM running for 22.238)
+11:36:03.079 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2032] - {dataSource-1} closing ...
+11:36:03.088 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2104] - {dataSource-1} closed
+11:36:03.090 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2032] - {dataSource-2} closing ...
+11:36:03.103 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2104] - {dataSource-2} closed
+11:37:20.531 [main] INFO  c.e.d.UserMapperTest - [logStartupProfileInfo,655] - The following profiles are active: db-config
+11:37:23.995 [main] INFO  c.n.c.s.URLConfigurationSource - [<init>,122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+11:37:24.010 [main] INFO  c.n.c.s.URLConfigurationSource - [<init>,122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+11:37:26.610 [main] INFO  c.a.d.p.DruidDataSource - [init,985] - {dataSource-1} inited
+11:37:28.992 [main] INFO  c.a.d.p.DruidDataSource - [init,985] - {dataSource-2} inited
+11:37:34.419 [main] INFO  c.e.d.UserMapperTest - [logStarted,61] - Started UserMapperTest in 17.95 seconds (JVM running for 21.288)
+11:37:36.228 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2032] - {dataSource-1} closing ...
+11:37:36.235 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2104] - {dataSource-1} closed
+11:37:36.236 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2032] - {dataSource-2} closing ...
+11:37:36.240 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2104] - {dataSource-2} closed
+11:40:02.734 [main] INFO  c.e.d.UserMapperTest - [logStartupProfileInfo,655] - The following profiles are active: db-config
+11:40:06.114 [main] INFO  c.n.c.s.URLConfigurationSource - [<init>,122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+11:40:06.127 [main] INFO  c.n.c.s.URLConfigurationSource - [<init>,122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+11:40:09.467 [main] INFO  c.a.d.p.DruidDataSource - [init,985] - {dataSource-1} inited
+11:40:13.114 [main] INFO  c.a.d.p.DruidDataSource - [init,985] - {dataSource-2} inited
+11:40:21.768 [main] INFO  c.e.d.UserMapperTest - [logStarted,61] - Started UserMapperTest in 23.16 seconds (JVM running for 26.512)
+11:40:22.301 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2032] - {dataSource-1} closing ...
+11:40:22.311 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2104] - {dataSource-1} closed
+11:40:22.312 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2032] - {dataSource-2} closing ...
+11:40:22.315 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2104] - {dataSource-2} closed
+11:41:17.385 [main] INFO  c.e.d.UserMapperTest - [logStartupProfileInfo,655] - The following profiles are active: db-config
+11:41:24.603 [main] INFO  c.n.c.s.URLConfigurationSource - [<init>,122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+11:41:24.621 [main] INFO  c.n.c.s.URLConfigurationSource - [<init>,122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+11:41:33.057 [main] INFO  c.a.d.p.DruidDataSource - [init,985] - {dataSource-1} inited
+11:41:36.463 [main] INFO  c.a.d.p.DruidDataSource - [init,985] - {dataSource-2} inited
+11:41:47.354 [main] INFO  c.e.d.UserMapperTest - [logStarted,61] - Started UserMapperTest in 37.932 seconds (JVM running for 42.993)
+11:41:51.163 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2032] - {dataSource-1} closing ...
+11:41:51.171 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2104] - {dataSource-1} closed
+11:41:51.172 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2032] - {dataSource-2} closing ...
+11:41:51.174 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2104] - {dataSource-2} closed
+11:43:14.741 [main] INFO  c.e.d.UserMapperTest - [logStartupProfileInfo,655] - The following profiles are active: db-config
+11:43:18.122 [main] INFO  c.n.c.s.URLConfigurationSource - [<init>,122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+11:43:18.140 [main] INFO  c.n.c.s.URLConfigurationSource - [<init>,122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+11:43:20.858 [main] INFO  c.a.d.p.DruidDataSource - [init,985] - {dataSource-1} inited
+11:43:23.190 [main] INFO  c.a.d.p.DruidDataSource - [init,985] - {dataSource-2} inited
+11:43:28.062 [main] INFO  c.e.d.UserMapperTest - [logStarted,61] - Started UserMapperTest in 16.966 seconds (JVM running for 20.75)
+11:43:29.983 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2032] - {dataSource-1} closing ...
+11:43:29.995 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2104] - {dataSource-1} closed
+11:43:29.996 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2032] - {dataSource-2} closing ...
+11:43:29.999 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2104] - {dataSource-2} closed
+11:47:55.577 [main] INFO  c.e.d.UserMapperTest - [logStartupProfileInfo,655] - The following profiles are active: db-config
+11:47:59.119 [main] INFO  c.n.c.s.URLConfigurationSource - [<init>,122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+11:47:59.133 [main] INFO  c.n.c.s.URLConfigurationSource - [<init>,122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+11:48:01.750 [main] INFO  c.a.d.p.DruidDataSource - [init,985] - {dataSource-1} inited
+11:48:04.182 [main] INFO  c.a.d.p.DruidDataSource - [init,985] - {dataSource-2} inited
+11:48:09.703 [main] INFO  c.e.d.UserMapperTest - [logStarted,61] - Started UserMapperTest in 19.575 seconds (JVM running for 23.707)
+11:48:12.927 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2032] - {dataSource-1} closing ...
+11:48:12.935 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2104] - {dataSource-1} closed
+11:48:12.936 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2032] - {dataSource-2} closing ...
+11:48:12.939 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2104] - {dataSource-2} closed
+14:53:45.027 [main] INFO  c.e.d.UserMapperTest - [logStartupProfileInfo,655] - The following profiles are active: db-config
+14:53:48.631 [main] INFO  c.n.c.s.URLConfigurationSource - [<init>,122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+14:53:48.648 [main] INFO  c.n.c.s.URLConfigurationSource - [<init>,122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+14:53:51.456 [main] INFO  c.a.d.p.DruidDataSource - [init,985] - {dataSource-1} inited
+14:53:54.499 [main] INFO  c.a.d.p.DruidDataSource - [init,985] - {dataSource-2} inited
+14:54:00.061 [main] INFO  c.e.d.UserMapperTest - [logStarted,61] - Started UserMapperTest in 19.048 seconds (JVM running for 22.764)
+14:54:02.138 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2032] - {dataSource-1} closing ...
+14:54:02.149 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2104] - {dataSource-1} closed
+14:54:02.150 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2032] - {dataSource-2} closing ...
+14:54:02.152 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2104] - {dataSource-2} closed
+14:54:57.500 [main] INFO  c.e.d.UserMapperTest - [logStartupProfileInfo,655] - The following profiles are active: db-config
+14:55:00.925 [main] INFO  c.n.c.s.URLConfigurationSource - [<init>,122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+14:55:00.942 [main] INFO  c.n.c.s.URLConfigurationSource - [<init>,122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+14:55:03.740 [main] INFO  c.a.d.p.DruidDataSource - [init,985] - {dataSource-1} inited
+14:55:06.072 [main] INFO  c.a.d.p.DruidDataSource - [init,985] - {dataSource-2} inited
+14:55:11.364 [main] INFO  c.e.d.UserMapperTest - [logStarted,61] - Started UserMapperTest in 18.224 seconds (JVM running for 21.735)
+14:55:13.299 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2032] - {dataSource-1} closing ...
+14:55:13.308 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2104] - {dataSource-1} closed
+14:55:13.309 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2032] - {dataSource-2} closing ...
+14:55:13.311 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2104] - {dataSource-2} closed
+14:56:59.277 [main] INFO  c.e.d.UserMapperTest - [logStartupProfileInfo,655] - The following profiles are active: db-config
+14:57:02.759 [main] INFO  c.n.c.s.URLConfigurationSource - [<init>,122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+14:57:02.771 [main] INFO  c.n.c.s.URLConfigurationSource - [<init>,122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+14:57:05.317 [main] INFO  c.a.d.p.DruidDataSource - [init,985] - {dataSource-1} inited
+14:57:07.822 [main] INFO  c.a.d.p.DruidDataSource - [init,985] - {dataSource-2} inited
+14:57:13.199 [main] INFO  c.e.d.UserMapperTest - [logStarted,61] - Started UserMapperTest in 18.425 seconds (JVM running for 22.768)
+14:57:15.168 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2032] - {dataSource-1} closing ...
+14:57:15.175 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2104] - {dataSource-1} closed
+14:57:15.176 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2032] - {dataSource-2} closing ...
+14:57:15.178 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2104] - {dataSource-2} closed
+15:23:58.012 [main] INFO  c.e.d.UserMapperTest - [logStartupProfileInfo,655] - The following profiles are active: db-config
+15:24:01.959 [main] INFO  c.n.c.s.URLConfigurationSource - [<init>,122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+15:24:01.974 [main] INFO  c.n.c.s.URLConfigurationSource - [<init>,122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+15:24:04.596 [main] INFO  c.a.d.p.DruidDataSource - [init,985] - {dataSource-1} inited
+15:24:07.609 [main] INFO  c.a.d.p.DruidDataSource - [init,985] - {dataSource-2} inited
+15:24:13.916 [main] INFO  c.e.d.UserMapperTest - [logStarted,61] - Started UserMapperTest in 21.954 seconds (JVM running for 27.728)
+15:24:17.353 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2032] - {dataSource-1} closing ...
+15:24:17.362 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2104] - {dataSource-1} closed
+15:24:17.362 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2032] - {dataSource-2} closing ...
+15:24:17.364 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2104] - {dataSource-2} closed

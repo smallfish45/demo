@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.dao.UserMapper">
+
+    <sql id="Base_Column_List" >
+        uuid, user_id, user_name, user_password, user_mobile, user_score, user_reg_time, user_money
+    </sql>
+
+    <resultMap id="BaseResultMap" type="com.example.pojo.User" >
+        <result column="uuid" property="uuid" jdbcType="BIGINT" />
+        <result column="user_id" property="userId" jdbcType="BIGINT" />
+        <result column="user_name" property="userName" jdbcType="VARCHAR" />
+        <result column="user_password" property="userPassword" jdbcType="VARCHAR" />
+        <result column="user_mobile" property="userMobile" jdbcType="VARCHAR" />
+        <result column="user_score" property="userScore" jdbcType="INTEGER" />
+        <result column="user_reg_time" property="userRegTime" jdbcType="TIMESTAMP" />
+        <result column="user_money" property="userMoney" jdbcType="DECIMAL" />
+    </resultMap>
+
+    <sql id="Example_Where_Clause" >
+        <where >
+            <foreach collection="oredCriteria" item="criteria" separator="or" >
+                <if test="criteria.valid" >
+                    <trim prefix="(" suffix=")" prefixOverrides="and" >
+                        <foreach collection="criteria.criteria" item="criterion" >
+                            <choose >
+                                <when test="criterion.noValue" >
+                                    and ${criterion.condition}
+                                </when>
+                                <when test="criterion.singleValue" >
+                                    and ${criterion.condition} #{criterion.value}
+                                </when>
+                                <when test="criterion.betweenValue" >
+                                    and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                                </when>
+                                <when test="criterion.listValue" >
+                                    and ${criterion.condition}
+                                    <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                                        #{listItem}
+                                    </foreach>
+                                </when>
+                            </choose>
+                        </foreach>
+                    </trim>
+                </if>
+            </foreach>
+        </where>
+    </sql>
+
+    <sql id="Update_By_Example_Where_Clause" >
+        <where >
+            <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+                <if test="criteria.valid" >
+                    <trim prefix="(" suffix=")" prefixOverrides="and" >
+                        <foreach collection="criteria.criteria" item="criterion" >
+                            <choose >
+                                <when test="criterion.noValue" >
+                                    and ${criterion.condition}
+                                </when>
+                                <when test="criterion.singleValue" >
+                                    and ${criterion.condition} #{criterion.value}
+                                </when>
+                                <when test="criterion.betweenValue" >
+                                    and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                                </when>
+                                <when test="criterion.listValue" >
+                                    and ${criterion.condition}
+                                    <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                                        #{listItem}
+                                    </foreach>
+                                </when>
+                            </choose>
+                        </foreach>
+                    </trim>
+                </if>
+            </foreach>
+        </where>
+    </sql>
+
+
+<!--    <select id="getAllUser" resultMap="UserMap">-->
+<!--        SELECT uuid, id, name, gender, age FROM user;-->
+<!--    </select>-->
+
+    <insert id="insertUser" parameterType="com.example.pojo.User" >
+        INSERT INTO user
+         <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="uuid != null">
+                uuid,
+            </if>
+            <if test="userId != null">
+                user_id,
+            </if>
+            <if test="userName != null and userName != ''">
+                user_name,
+            </if>
+            <if test="userPassword != null and userPassword != ''">
+                user_password,
+            </if>
+            <if test="userMobile != null and userMobile != ''">
+                user_mobile,
+            </if>
+             <if test="userScore != null">
+                 user_score,
+             </if>
+             <if test="userRegTime != null">
+                 user_reg_time,
+             </if>
+
+             <if test="userMoney != null">
+                 user_money,
+             </if>
+         </trim>
+        VALUE
+         <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="uuid != null">
+                #{uuid,jdbcType=BIGINT},
+            </if>
+            <if test="userId != null">
+                #{userId,jdbcType=BIGINT},
+            </if>
+            <if test="userName != null and userName != ''">
+                #{userName,jdbcType=VARCHAR},
+            </if>
+            <if test="userPassword != null and userPassword != ''">
+                #{userPassword,jdbcType=VARCHAR},
+            </if>
+            <if test="userMobile != null and userMobile != ''">
+                #{userMobile,jdbcType=VARCHAR},
+            </if>
+            <if test="userScore != null">
+                #{userScore,jdbcType=INTEGER},
+            </if>
+            <if test="userRegTime != null">
+                #{userRegTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="userMoney != null">
+                #{userMoney,jdbcType=DECIMAL},
+            </if>
+        </trim>
+    </insert>
+
+    <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.example.pojo.UserExample" >
+        select
+        <if test="distinct" >
+            distinct
+        </if>
+        <include refid="Base_Column_List" />
+            from user
+        <if test="_parameter != null" >
+            <include refid="Example_Where_Clause" />
+        </if>
+        <if test="orderByClause != null" >
+            order by ${orderByClause}
+        </if>
+    </select>
+
+    <update id="updateByExample" parameterType="map" >
+        update user
+        set user_id = #{record.userId,jdbcType=BIGINT},
+        user_name = #{record.userName,jdbcType=VARCHAR},
+        user_password = #{record.userPassword,jdbcType=VARCHAR},
+        user_mobile = #{record.userMobile,jdbcType=VARCHAR},
+        user_score = #{record.userScore,jdbcType=INTEGER},
+        user_reg_time = #{record.userRegTime,jdbcType=TIMESTAMP},
+        user_money = #{record.userMoney,jdbcType=DECIMAL}
+        <if test="_parameter != null" >
+            <include refid="Update_By_Example_Where_Clause" />
+        </if>
+    </update>
+
+    <update id="updateByExampleSelective" parameterType="map" >
+        update user
+        <set >
+            <if test="record.userId != null" >
+                user_id = #{record.userId,jdbcType=BIGINT},
+            </if>
+            <if test="record.userName != null" >
+                user_name = #{record.userName,jdbcType=VARCHAR},
+            </if>
+            <if test="record.userPassword != null" >
+                user_password = #{record.userPassword,jdbcType=VARCHAR},
+            </if>
+            <if test="record.userMobile != null" >
+                user_mobile = #{record.userMobile,jdbcType=VARCHAR},
+            </if>
+            <if test="record.userScore != null" >
+                user_score = #{record.userScore,jdbcType=INTEGER},
+            </if>
+            <if test="record.userRegTime != null" >
+                user_reg_time = #{record.userRegTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="record.userMoney != null" >
+                user_money = #{record.userMoney,jdbcType=DECIMAL},
+            </if>
+        </set>
+        <if test="_parameter != null" >
+            <include refid="Update_By_Example_Where_Clause" />
+        </if>
+    </update>
+
+</mapper>
