@@ -80,10 +80,6 @@
     </sql>
 
 
-<!--    <select id="getAllUser" resultMap="UserMap">-->
-<!--        SELECT uuid, id, name, gender, age FROM user;-->
-<!--    </select>-->
-
     <insert id="insertUser" parameterType="com.example.pojo.User" >
         INSERT INTO user
          <trim prefix="(" suffix=")" suffixOverrides=",">

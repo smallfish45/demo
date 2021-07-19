@@ -1,4 +1,10 @@
+com\example\pojo\UserMoneyLogExample$Criteria.class
+com\example\pojo\UserMoneyLogExample$GeneratedCriteria.class
+com\example\pojo\UserExample.class
 com\example\pojo\UserExample$Criteria.class
+com\example\pojo\UserMoneyLog.class
+com\example\pojo\UserMoneyLogExample$Criterion.class
+com\example\pojo\UserMoneyLogExample.class
 com\example\pojo\UserExample$Criterion.class
 com\example\pojo\UserExample$GeneratedCriteria.class
-com\example\pojo\UserExample.class
+com\example\pojo\UserMoneyLogKey.class
