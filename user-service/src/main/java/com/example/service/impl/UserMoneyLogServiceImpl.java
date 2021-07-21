@@ -24,8 +24,8 @@ public class UserMoneyLogServiceImpl implements UserMoneyLogService {
     @Override
     public boolean addUserMoneyLog(UserMoneyLog userMoneyLog) {
         try {
-            long uuid = Math.abs(UUID.randomUUID().getMostSignificantBits());
-            userMoneyLog.setOrderId(uuid);
+//            long uuid = Math.abs(UUID.randomUUID().getMostSignificantBits());
+//            userMoneyLog.setOrderId(uuid);
             userMoneyLog.setCreateTime(new Date(System.currentTimeMillis()));
             userMoneyLogMapper.insert(userMoneyLog);
         } catch (Exception e) {

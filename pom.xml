@@ -10,6 +10,7 @@
         <module>config-service</module>
         <module>order-service</module>
         <module>user-service</module>
+        <module>id-service</module>
     </modules>
 
     <parent>
