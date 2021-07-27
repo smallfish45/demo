@@ -4,6 +4,7 @@ import com.example.pojo.User;
 import com.example.pojo.UserExample;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.Date;
@@ -15,6 +16,15 @@ class UserMapperTest {
 
     @Autowired
     private UserMapper userMapper;
+
+    @Value("user.home")
+    private String user;
+
+    @Test
+    public void user() {
+        System.out.println(user);
+    }
+
 
     @Test
     void insertUser() {
