@@ -1,7 +1,7 @@
 package com.example.dao;
 
 import com.example.pojo.UserMoneyLog;
-import com.example.pojo.UserMoneyLogExample;
+import com.example.pojo.UserMoneyLogSqlCondition;
 import com.example.pojo.UserMoneyLogKey;
 import org.apache.ibatis.annotations.Mapper;
 
@@ -10,11 +10,11 @@ import java.util.List;
 @Mapper
 public interface UserMoneyLogMapper {
 
-    int deleteByExample(UserMoneyLogExample example);
+    int deleteByExample(UserMoneyLogSqlCondition example);
 
     int insert(UserMoneyLog record);
 
-    List<UserMoneyLog> selectByExample(UserMoneyLogExample example);
+    List<UserMoneyLog> selectByExample(UserMoneyLogSqlCondition example);
 
     UserMoneyLog selectByPrimaryKey(UserMoneyLogKey key);
 

@@ -2,13 +2,15 @@ package com.example.service.impl;
 
 import com.example.dao.UserMapper;
 import com.example.pojo.User;
-import com.example.pojo.UserExample;
+import com.example.pojo.UserSqlCondition;
 import com.example.service.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
 import java.util.Date;
 import java.util.List;
 import java.util.UUID;
@@ -16,13 +18,18 @@ import java.util.UUID;
 @Service
 public class UserServiceImpl implements UserService {
 
-    private Logger LOGGER = LoggerFactory.getLogger(UserServiceImpl.class);
+    private static final String REDIS_KEY_PREFIX = "user:";
 
-    @Autowired
+    private final Logger LOGGER = LoggerFactory.getLogger(UserServiceImpl.class);
+
+    @Resource
     private UserMapper userMapper;
 
-    @Autowired
+    @Resource
     private UserService userService;
+
+    @Resource
+    private RedisTemplate<String, Object> redisTemplate;
 
     @Override
     public boolean addUser(User user) {
@@ -48,12 +55,19 @@ public class UserServiceImpl implements UserService {
     @Override
     public boolean updateUser(User user) {
         try {
-            UserExample userExample = new UserExample();
-            UserExample.Criteria criteria = userExample.createCriteria();
+            UserSqlCondition userSqlCondition = new UserSqlCondition();
+            UserSqlCondition.Criteria criteria = userSqlCondition.createCriteria();
             criteria.andUUIDEqualTo(user.getUuid())
                     .andUserIdEqualTo(user.getUserId());
 
-            userMapper.updateByExampleSelective(user, userExample);
+            userMapper.updateByExampleSelective(user, userSqlCondition);
+
+            String redisKey = UserServiceImpl.REDIS_KEY_PREFIX + user.getUserName();
+            Boolean hasKey = redisTemplate.hasKey(redisKey);
+            if (hasKey != null && hasKey) {
+                redisTemplate.delete(redisKey);
+                LOGGER.info("delete user from redis : {}", hasKey);
+            }
         } catch (Exception e) {
             e.printStackTrace();
             return false;
@@ -64,14 +78,22 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User getUserByName(String name) {
+        String redisKey = UserServiceImpl.REDIS_KEY_PREFIX + name;
+        Boolean hasKey = redisTemplate.hasKey(redisKey);
+        if (hasKey != null && hasKey) {
+            LOGGER.info("return user from redis : {}", redisKey);
+            return (User) redisTemplate.opsForValue().get(redisKey);
+        }
 
-        UserExample userExample = new UserExample();
-        UserExample.Criteria criteria = userExample.createCriteria();
+        UserSqlCondition userSqlCondition = new UserSqlCondition();
+        UserSqlCondition.Criteria criteria = userSqlCondition.createCriteria();
         criteria.andUserNameEqualTo(name);
 
-        List<User> users = userMapper.selectByExample(userExample);
+        List<User> users = userMapper.selectByExample(userSqlCondition);
 
         if (users != null && users.size() == 1) {
+            redisTemplate.opsForValue().set(redisKey, users.get(0));
+            LOGGER.info("add user to redis : {}", redisKey);
             return users.get(0);
         }
 
@@ -81,10 +103,10 @@ public class UserServiceImpl implements UserService {
     @Override
     public List<User> getAllUser() {
 
-        UserExample userExample = new UserExample();
-        userExample.createCriteria();
+        UserSqlCondition userSqlCondition = new UserSqlCondition();
+        userSqlCondition.createCriteria();
 
-        return userMapper.selectByExample(userExample);
+        return userMapper.selectByExample(userSqlCondition);
     }
 
 }

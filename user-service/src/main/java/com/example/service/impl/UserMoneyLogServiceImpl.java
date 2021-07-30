@@ -2,7 +2,7 @@ package com.example.service.impl;
 
 import com.example.dao.UserMoneyLogMapper;
 import com.example.pojo.UserMoneyLog;
-import com.example.pojo.UserMoneyLogExample;
+import com.example.pojo.UserMoneyLogSqlCondition;
 import com.example.service.UserMoneyLogService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -11,7 +11,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.Date;
 import java.util.List;
-import java.util.UUID;
 
 @Service
 public class UserMoneyLogServiceImpl implements UserMoneyLogService {
@@ -49,11 +48,11 @@ public class UserMoneyLogServiceImpl implements UserMoneyLogService {
 
     @Override
     public UserMoneyLog getUserMoneyLogByUserId(long userId) {
-        UserMoneyLogExample userMoneyLogExample = new UserMoneyLogExample();
-        UserMoneyLogExample.Criteria criteria = userMoneyLogExample.createCriteria();
+        UserMoneyLogSqlCondition userMoneyLogSqlCondition = new UserMoneyLogSqlCondition();
+        UserMoneyLogSqlCondition.Criteria criteria = userMoneyLogSqlCondition.createCriteria();
         criteria.andUserIdEqualTo(userId);
 
-        List<UserMoneyLog> userMoneyLogs = userMoneyLogMapper.selectByExample(userMoneyLogExample);
+        List<UserMoneyLog> userMoneyLogs = userMoneyLogMapper.selectByExample(userMoneyLogSqlCondition);
         if (userMoneyLogs == null || userMoneyLogs.size() != 1) {
             return null;
         }
@@ -63,8 +62,8 @@ public class UserMoneyLogServiceImpl implements UserMoneyLogService {
 
     @Override
     public List<UserMoneyLog> getAllUserMoneyLog() {
-        UserMoneyLogExample userMoneyLogExample = new UserMoneyLogExample();
+        UserMoneyLogSqlCondition userMoneyLogSqlCondition = new UserMoneyLogSqlCondition();
 
-        return userMoneyLogMapper.selectByExample(userMoneyLogExample);
+        return userMoneyLogMapper.selectByExample(userMoneyLogSqlCondition);
     }
 }

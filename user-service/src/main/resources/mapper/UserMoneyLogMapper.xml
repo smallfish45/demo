@@ -47,7 +47,7 @@
        uuid, user_id, order_id, money_log_type, use_money, create_time
     </sql>
 
-    <delete id="deleteByExample" parameterType="com.example.pojo.UserMoneyLogExample" >
+    <delete id="deleteByExample" parameterType="com.example.pojo.UserMoneyLogSqlCondition" >
         delete from user_money_log
         <if test="_parameter != null" >
             <include refid="Example_Where_Clause" />
@@ -71,7 +71,7 @@
              #{createTime,jdbcType=TIMESTAMP})
     </insert>
 
-    <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.example.pojo.UserMoneyLogExample" >
+    <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.example.pojo.UserMoneyLogSqlCondition" >
         select
         <if test="distinct" >
             distinct

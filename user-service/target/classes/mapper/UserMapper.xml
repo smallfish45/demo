@@ -138,7 +138,7 @@
         </trim>
     </insert>
 
-    <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.example.pojo.UserExample" >
+    <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.example.pojo.UserSqlCondition" >
         select
         <if test="distinct" >
             distinct

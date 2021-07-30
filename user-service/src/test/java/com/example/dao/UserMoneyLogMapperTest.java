@@ -1,7 +1,7 @@
 package com.example.dao;
 
 import com.example.pojo.User;
-import com.example.pojo.UserExample;
+import com.example.pojo.UserSqlCondition;
 import com.example.pojo.UserMoneyLog;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,8 +11,6 @@ import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
 import java.util.UUID;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 class UserMoneyLogMapperTest {
@@ -29,11 +27,11 @@ class UserMoneyLogMapperTest {
 
     @Test
     void insert() {
-        UserExample userExample = new UserExample();
-        UserExample.Criteria criteria = userExample.createCriteria();
+        UserSqlCondition userSqlCondition = new UserSqlCondition();
+        UserSqlCondition.Criteria criteria = userSqlCondition.createCriteria();
         criteria.andUserNameEqualTo("small");
 
-        List<User> users = userMapper.selectByExample(userExample);
+        List<User> users = userMapper.selectByExample(userSqlCondition);
         users.forEach(System.out::println);
 
         for (User user : users) {

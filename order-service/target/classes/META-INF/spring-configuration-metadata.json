@@ -1,0 +1,47 @@
+{
+  "groups": [
+    {
+      "name": "rocketmq",
+      "type": "com.example.conf.RocketMQProperties",
+      "sourceType": "com.example.conf.RocketMQProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "rocketmq.enable",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.example.conf.RocketMQProperties"
+    },
+    {
+      "name": "rocketmq.group-name",
+      "type": "java.lang.String",
+      "sourceType": "com.example.conf.RocketMQProperties",
+      "defaultValue": "default"
+    },
+    {
+      "name": "rocketmq.namesrv-addr",
+      "type": "java.lang.String",
+      "sourceType": "com.example.conf.RocketMQProperties",
+      "defaultValue": "localhost:9876"
+    },
+    {
+      "name": "rocketmq.producer-max-message-size",
+      "type": "java.lang.Integer",
+      "sourceType": "com.example.conf.RocketMQProperties",
+      "defaultValue": 1024
+    },
+    {
+      "name": "rocketmq.producer-retry-times-when-send-failed",
+      "type": "java.lang.Integer",
+      "sourceType": "com.example.conf.RocketMQProperties",
+      "defaultValue": 2
+    },
+    {
+      "name": "rocketmq.producer-send-msg-timeout",
+      "type": "java.lang.Integer",
+      "sourceType": "com.example.conf.RocketMQProperties",
+      "defaultValue": 2000
+    }
+  ],
+  "hints": []
+}

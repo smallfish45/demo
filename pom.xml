@@ -29,6 +29,7 @@
     <properties>
         <java.version>8</java.version>
         <spring-cloud.version>Hoxton.SR5</spring-cloud.version>
+        <rocketmq.version>4.3.0</rocketmq.version>
     </properties>
 
     <dependencyManagement>
@@ -42,6 +43,15 @@
                 <scope>import</scope>
             </dependency>
 
+            <!-- MQ Begin -->
+            <dependency>
+                <groupId>org.apache.rocketmq</groupId>
+                <artifactId>rocketmq-client</artifactId>
+                <version>${rocketmq.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <!-- MQ End -->
         </dependencies>
     </dependencyManagement>
 
